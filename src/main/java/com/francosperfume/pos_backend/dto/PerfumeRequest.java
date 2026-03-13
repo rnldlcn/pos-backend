@@ -1,9 +1,10 @@
-package dto;
+package com.francosperfume.pos_backend.dto;
 
 public class PerfumeRequest {
-    String name;
-    double price;
-    int stockQuantity;
+    private String name;
+    private double price;
+    private int stockQuantity;
+    private String brand;
     public String getName() {
         return name;
     }
@@ -22,5 +23,10 @@ public class PerfumeRequest {
     public void setStockQuantity(int stockQuantity) {
         this.stockQuantity = stockQuantity;
     }
-    
+    public String getBrand() {
+        return brand;
+    }
+    public void setBrand(String brand) {
+        this.brand = brand;
+    }
 }
